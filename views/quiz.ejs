@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .card {
+        height: 400px;
+        width: 80%;
+        font-size: 18px;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .button button {
+        width: 100px;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+      }
+      .button button a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <% if(data){ %>
+          <form action="/quiz/<%= id %>?answer=<%= data.answer %>" method="post">
+            <h4 style="font-size: 30px;"><strong><%=data.question%></strong></h4>
+            <input type="radio" name="answer" value="<%=data.options[0]%>" required/>
+            <label for=""> <%=data.options[0]%> </label>
+            <br />
+            <input type="radio" name="answer" value="<%=data.options[1]%>" required/>
+            <label for=""> <%=data.options[1]%> </label>
+            <br />
+            <input type="radio" name="answer" value="<%=data.options[2]%>" required/>
+            <label for=""> <%=data.options[2]%> </label>
+            <br />
+            <input type="radio" name="answer" value="<%=data.options[3]%>" required/>
+            <label for=""> <%=data.options[3]%> </label>
+            <div class="button">
+              <button type="submit" class="btn btn-info">Next</button>
+            </div>
+          </form>
+          <%}else{%>
+            <h1 class="text-center">Quiz is Finished!</h1>
+            <form action="/user" method="get">
+                <div class="button">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+          <%}%>
+        </div>
+      </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

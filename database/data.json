@@ -1,0 +1,186 @@
+{
+  "users": [
+    {
+      "id": "8d87",
+      "username": "Akash Singh",
+      "age": "22"
+    },
+    {
+      "id": "d80b",
+      "username": "Aditya Singh",
+      "age": "21"
+    },
+    {
+      "id": "6ba5",
+      "username": "Aditya Singh",
+      "age": "21"
+    }
+  ],
+  "data": [
+    {
+      "question": "What is a promise in JavaScript?",
+      "options": [
+        "A function that executes immediately",
+        "An object representing the eventual completion or failure of an asynchronous operation",
+        "A synchronous operation",
+        "A method to handle synchronous code"
+      ],
+      "answer": "An object representing the eventual completion or failure of an asynchronous operation",
+      "id": "0"
+    },
+    {
+      "question": "What are the states of a promise?",
+      "options": [
+        "Started, Ongoing, Completed",
+        "Pending, In Progress, Done",
+        "Pending, Fulfilled, Rejected",
+        "Initialized, Processing, Finished"
+      ],
+      "answer": "Pending, Fulfilled, Rejected",
+      "id": "1"
+    },
+    {
+      "question": "How do you create a promise in JavaScript?",
+      "options": [
+        "Using the `createPromise` function",
+        "Using the `new Promise` constructor",
+        "Using the `makePromise` method",
+        "Using the `Promise.create` method"
+      ],
+      "answer": "Using the `new Promise` constructor",
+      "id": "2"
+    },
+    {
+      "question": "What method is used to handle a fulfilled promise?",
+      "options": [
+        "`catch`",
+        "`finally`",
+        "`then`",
+        "`resolve`"
+      ],
+      "answer": "`then`",
+      "id": "3"
+    },
+    {
+      "question": "What method is used to handle a rejected promise?",
+      "options": [
+        "`catch`",
+        "`finally`",
+        "`then`",
+        "`reject`"
+      ],
+      "answer": "`catch`",
+      "id": "4"
+    },
+    {
+      "question": "Can you chain promises? If so, how?",
+      "options": [
+        "No, you cannot chain promises",
+        "Yes, using the `then` method",
+        "Yes, using the `catch` method",
+        "Yes, using the `finally` method"
+      ],
+      "answer": "Yes, using the `then` method",
+      "id": "5"
+    },
+    {
+      "question": "What is the purpose of the `finally` method in a promise?",
+      "options": [
+        "To handle a fulfilled promise",
+        "To handle a rejected promise",
+        "To execute code after the promise is settled, regardless of its outcome",
+        "To chain multiple promises"
+      ],
+      "answer": "To execute code after the promise is settled, regardless of its outcome",
+      "id": "6"
+    },
+    {
+      "question": "How do you resolve a promise?",
+      "options": [
+        "Using the `resolve` function inside the promise executor",
+        "Using the `reject` function inside the promise executor",
+        "Using the `then` method",
+        "Using the `catch` method"
+      ],
+      "answer": "Using the `resolve` function inside the promise executor",
+      "id": "7"
+    },
+    {
+      "question": "How do you reject a promise?",
+      "options": [
+        "Using the `resolve` function inside the promise executor",
+        "Using the `reject` function inside the promise executor",
+        "Using the `then` method",
+        "Using the `catch` method"
+      ],
+      "answer": "Using the `reject` function inside the promise executor",
+      "id": "8"
+    },
+    {
+      "question": "What is the syntax for creating a new promise?",
+      "options": [
+        "new Promise((resolve, reject) => { /* executor */ });",
+        "Promise.create((resolve, reject) => { /* executor */ });",
+        "Promise.new((resolve, reject) => { /* executor */ });",
+        "makePromise((resolve, reject) => { /* executor */ });"
+      ],
+      "answer": "new Promise((resolve, reject) => { /* executor */ });",
+      "id": "9"
+    },
+    {
+      "question": "What does the `Promise.all` method do?",
+      "options": [
+        "Takes an array of promises and returns a single promise that resolves when all the input promises are resolved",
+        "Takes an array of promises and returns a single promise that resolves or rejects as soon as one of the input promises resolves or rejects",
+        "Takes an array of promises and returns a single promise that resolves when all the input promises have settled",
+        "Takes an array of promises and returns a single promise that resolves as soon as any of the input promises resolves"
+      ],
+      "answer": "Takes an array of promises and returns a single promise that resolves when all the input promises are resolved",
+      "id": "10"
+    },
+    {
+      "question": "What does the `Promise.race` method do?",
+      "options": [
+        "Takes an array of promises and returns a single promise that resolves when all the input promises are resolved",
+        "Takes an array of promises and returns a single promise that resolves or rejects as soon as one of the input promises resolves or rejects",
+        "Takes an array of promises and returns a single promise that resolves when all the input promises have settled",
+        "Takes an array of promises and returns a single promise that resolves as soon as any of the input promises resolves"
+      ],
+      "answer": "Takes an array of promises and returns a single promise that resolves or rejects as soon as one of the input promises resolves or rejects",
+      "id": "11"
+    },
+    {
+      "question": "What does the `Promise.allSettled` method do?",
+      "options": [
+        "Takes an array of promises and returns a single promise that resolves when all the input promises are resolved",
+        "Takes an array of promises and returns a single promise that resolves or rejects as soon as one of the input promises resolves or rejects",
+        "Takes an array of promises and returns a single promise that resolves when all the input promises have settled",
+        "Takes an array of promises and returns a single promise that resolves as soon as any of the input promises resolves"
+      ],
+      "answer": "Takes an array of promises and returns a single promise that resolves when all the input promises have settled",
+      "id": "12"
+    },
+    {
+      "question": "What does the `Promise.any` method do?",
+      "options": [
+        "Takes an array of promises and returns a single promise that resolves when all the input promises are resolved",
+        "Takes an array of promises and returns a single promise that resolves or rejects as soon as one of the input promises resolves or rejects",
+        "Takes an array of promises and returns a single promise that resolves when all the input promises have settled",
+        "Takes an array of promises and returns a single promise that resolves as soon as any of the input promises resolves"
+      ],
+      "answer": "Takes an array of promises and returns a single promise that resolves as soon as any of the input promises resolves",
+      "id": "13"
+    },
+    {
+      "question": "Which method can be used to handle both fulfillment and rejection of a promise?",
+      "options": [
+        "`then`",
+        "`catch`",
+        "`finally`",
+        "`resolve`"
+      ],
+      "answer": "`finally`",
+      "id": "14"
+    }
+  ]
+}
