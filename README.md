@@ -35,14 +35,14 @@ To get a local copy up and running follow these simple steps.
 
 git clone https://github.com/your-username/quiz-game.git
 
-2.Navigate to the project directory
+2. Navigate to the project directory
 
 cd quiz-game
 
-3.Install NPM packages
+3. Install NPM packages
 
 npm install
 
-4.Start the server
+4. Start the server
 
 npm start
